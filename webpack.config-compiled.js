@@ -12,12 +12,12 @@ module.exports = {
         filename: '[name].[chunkhash:8].js'
     },
     module: {
-        loaders: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                loader: 'babel-loader'
-            }
-        ]
+        loaders: [{
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: 'babel-loader'
+        }]
     }
 };
+
+//# sourceMappingURL=webpack.config-compiled.js.map
