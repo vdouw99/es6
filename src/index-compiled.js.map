@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.js"],"names":[],"mappings":"AAAA;;;;AAIA,OAAO,gBAAP;AACA;AACA,OAAO,sBAAP","file":"index-compiled.js","sourcesContent":["/**\r\n * Created by sf on 2017/12/19.\r\n */\r\n\r\nimport 'babel-polyfill';\r\n3\r\nimport './es6Segmentfault.js';\r\n\r\n\r\n\r\n\r\n\r\n\r\n"]}
