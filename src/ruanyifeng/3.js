@@ -58,6 +58,44 @@ function exampleFun() {
 let {foo, bar} = exampleFun();
 console.log(foo + "|" + bar);
 
+console.log('---3、函数的参数定义---------');
+console.log('解构赋值可以方便地将一组参数与变量名对应起来。');
+function ff([x,y,z]) {
+    return x + y * z;
+}
+console.log(ff([7, 6, 2]));
+
+console.log('---4、提取JSON---------');
+let jsonData = {id: 43, status: "OK", data: [123, 456]};
+let {id, status, data:number} = jsonData;
+console.log(id + "|" + status + "|" + number);
+
+console.log('---5、函数的参数默认值---------');
+jQuery.ajax = function (url, {
+    async = true,
+    beforeSend = function () {
+    },
+    cache = true,
+    complete = function () {
+    },
+    crossDomain = false,
+    global = true
+    // ... more config
+}) {
+    // ... do stuff
+}
+
+console.log('---6、遍历Map结构---------');
+// const map111 = new Map();
+// map111.set('first', 'hello');
+// map111.set('second', 'world');
+// for (let [k1,v1] of map111) {
+//     console.log(k1 + " is " + v1);
+// }
+
+console.log('---7、输入模块的指定方法---------');
+console.log('加载模块时，往往需要指定输入哪些方法。解构赋值使得输入语句非常清晰。');
+console.log("import {mapState, mapActions} from 'vuex'");
 
 console.log('---------------------------------------');
 console.log('------ 3、变量的解析赋值（结束）-----------');
