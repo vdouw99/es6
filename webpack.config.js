@@ -105,13 +105,13 @@ module.exports = {
             cssProcessorOptions: {discardComments: {removeAll: true}},
             canPrint: true
         }),
-        new webpack.optimize.UglifyJsPlugin({
-            sourceMap: true,
-            minimize: true,
-            compress: {warnings: false},
-            output: {comments: false},
-            minChunks: Infinity
-        }),
+        // new webpack.optimize.UglifyJsPlugin({
+        //     sourceMap: true,
+        //     minimize: true,
+        //     compress: {warnings: false},
+        //     output: {comments: false},
+        //     minChunks: Infinity
+        // }),
 
         new CopyWebpackPlugin([
             {

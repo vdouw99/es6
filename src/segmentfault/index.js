@@ -2,6 +2,12 @@
  * Created by sf on 2017/12/22.
  */
 
+// 30分钟掌握ES6/ES2015核心内容 https://segmentfault.com/a/1190000004368132
+
+console.log('---------------------------------------');
+console.log('------ 30分钟掌握ES6/ES2015核心内容（开始）-----------');
+console.log('---------------------------------------');
+
 /**
  * https://segmentfault.com/a/1190000004368132
  * class, extends, super
@@ -60,3 +66,8 @@ function animal4(type = 'cat') {
     console.log(type);
 }
 animal4();
+
+
+console.log('---------------------------------------');
+console.log('------ 30分钟掌握ES6/ES2015核心内容（结束）-----------');
+console.log('---------------------------------------');
