@@ -78,13 +78,31 @@
 /************************************************************************/
 /******/[
 /* 0 */
-/***/function (module, exports) {
+/***/function (module, __webpack_exports__, __webpack_require__) {
 
+    "use strict";
+
+    Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+    /* harmony import */var __WEBPACK_IMPORTED_MODULE_0__es6Segmentfault_js__ = __webpack_require__(1);
+    /* harmony import */var __WEBPACK_IMPORTED_MODULE_0__es6Segmentfault_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__es6Segmentfault_js__);
     /**
      * Created by sf on 2017/12/19.
      */
 
+    // import 'babel-polyfill';
+
+
+    /***/
+},
+/* 1 */
+/***/function (module, exports) {
+
     /**
+     * Created by sf on 2017/12/22.
+     */
+
+    /**
+     * https://segmentfault.com/a/1190000004368132
      * class, extends, super
      */
     class Animal {
@@ -144,4 +162,4 @@
 }]
 /******/);
 
-//# sourceMappingURL=main.78bec2bd-compiled.js.map
+//# sourceMappingURL=main.4781b48a-compiled.js.map
