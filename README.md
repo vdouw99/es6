@@ -5,6 +5,8 @@ es6
 ECMAScript 6 入门（第三版）
 http://es6.ruanyifeng.com/
 
+
+4、字符串的扩展
 3、变量的解析赋值
 
 
