@@ -4,7 +4,7 @@
 
 import 'babel-polyfill';
 
-import './es6Segmentfault.js';
+import './segmentfault/index.js';
 
 
 
