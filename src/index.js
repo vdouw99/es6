@@ -4,10 +4,13 @@
 
 import 'babel-polyfill';
 
-import './segmentfault/index.js';
+
 
 // 3、变量的解析赋值
 import './ruanyifeng/3.js';
+
+// 30分钟掌握ES6/ES2015核心内容
+import './segmentfault/index.js';
 
 
 
