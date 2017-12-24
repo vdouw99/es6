@@ -3628,6 +3628,12 @@ __webpack_require__(328);
 
 __webpack_require__(329);
 
+__webpack_require__(330);
+
+__webpack_require__(331);
+
+__webpack_require__(332);
+
 /***/ }),
 /* 126 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -8941,6 +8947,116 @@ module.exports = function (regExp, replace) {
 "use strict";
 
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+ * Created by sf on 2017/12/22.
+ */
+
+// 30分钟掌握ES6/ES2015核心内容 https://segmentfault.com/a/1190000004368132
+
+console.log('---------------------------------------');
+console.log('------ 30分钟掌握ES6/ES2015核心内容（开始）-----------');
+console.log('---------------------------------------');
+
+/**
+ * https://segmentfault.com/a/1190000004368132
+ * class, extends, super
+ */
+
+var Animal = function () {
+    function Animal() {
+        _classCallCheck(this, Animal);
+
+        this.type = 'animal';
+    }
+
+    _createClass(Animal, [{
+        key: 'says',
+        value: function says(say) {
+            console.log(this.type + 'say' + say);
+        }
+    }]);
+
+    return Animal;
+}();
+
+var Cat = function (_Animal) {
+    _inherits(Cat, _Animal);
+
+    function Cat() {
+        _classCallCheck(this, Cat);
+
+        var _this = _possibleConstructorReturn(this, (Cat.__proto__ || Object.getPrototypeOf(Cat)).call(this));
+
+        _this.type = 'cat';
+        return _this;
+    }
+
+    return Cat;
+}(Animal);
+
+var animal = new Animal();
+animal.says('hello');
+
+var cat = new Cat();
+cat.says('helllo');
+
+/**
+ * destructuring
+ * @type {string}
+ */
+var cat1 = 'ken';
+var dog1 = 'lili';
+var zoo1 = { cat1: cat1, dog1: dog1 }; // es5
+var zoo2 = { cat1: cat1, dog1: dog1 }; //es6
+console.log(zoo1); // { cat1: 'ken', dog1: 'lili' }
+console.log(zoo2); // { cat1: 'ken', dog1: 'lili' }
+
+// 反过来，可以这样写
+var dog3 = { type: 'animal', many: 2 };
+var type = dog3.type,
+    many = dog3.many;
+
+console.log(type, many);
+
+/**
+ * default rest
+ * @param types
+ */
+function animals() {
+    for (var _len = arguments.length, types = Array(_len), _key = 0; _key < _len; _key++) {
+        types[_key] = arguments[_key];
+    }
+
+    console.log(types);
+}
+animals('cat', 'dog', 'fish');
+
+function animal4() {
+    var type = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'cat';
+
+    console.log(type);
+}
+animal4();
+
+console.log('---------------------------------------');
+console.log('------ 30分钟掌握ES6/ES2015核心内容（结束）-----------');
+console.log('---------------------------------------');
+
+/***/ }),
+/* 329 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
 
 /**
@@ -8948,6 +9064,7 @@ var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = [
  */
 
 // 3、变量的解析赋值
+console.log('\n\n');
 console.log('---------------------------------------');
 console.log('------ 3、变量的解析赋值（开始）-----------');
 console.log('---------------------------------------');
@@ -9091,113 +9208,311 @@ console.log('------ 3、变量的解析赋值（结束）-----------');
 console.log('---------------------------------------');
 
 /***/ }),
-/* 329 */
+/* 330 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
 /**
- * Created by sf on 2017/12/22.
+ * Created by sf on 2017/12/23.
  */
 
-// 30分钟掌握ES6/ES2015核心内容 https://segmentfault.com/a/1190000004368132
+// 04、字符串的扩展
+console.log('\n\n');
+console.log('---------------------------------------');
+console.log('------ 04、字符串的扩展（开始）-----------');
+console.log('---------------------------------------');
+
+// 5.at()
+console.log('提出字符串实例的at方法，可以识别 Unicode 编号大于0xFFFF的字符，返回正确的字符。');
+var word = '张𠮷可耕地三丰';
+for (var i = 0; i < word.length; i++) {
+  console.log(i + '--at--' + word.at(i));
+  console.log(i + '--charAt--' + word.charAt(i));
+}
+
+// 7.includes(), startsWith(), endsWith()
+console.log('传统上，JavaScript 只有indexOf方法，可以用来确定一个字符串是否包含在另一个字符串中。ES6 又提供了三种新方法。');
+
+// 8.repeat()
+console.log('0'.repeat(9) + 'repeat()');
+
+// 9.padStart(), padEnd()
+console.log('字符串补全长度的功能。如果某个字符串不够指定长度，会在头部或尾部补全');
+console.log('如果省略第二个参数，默认使用空格补全长度。');
+console.log('X'.padStart(5, 'cgh'));
+console.log('X'.padEnd(10, 'cgh'));
+console.log('另一个用途是提示字符串格式。');
+console.log('09-12'.padStart(10, 'YYYY-MM-DD'));
+
+// 10.模板字符串
+var a = 'aaa';
+console.log('\u6A21\u677F' + a + '\u5B57\u7B26\u4E32');
 
 console.log('---------------------------------------');
-console.log('------ 30分钟掌握ES6/ES2015核心内容（开始）-----------');
+console.log('------ 04、字符串的扩展（结束）-----------');
 console.log('---------------------------------------');
+
+/***/ }),
+/* 331 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 /**
- * https://segmentfault.com/a/1190000004368132
- * class, extends, super
+ * Created by sf on 2017/12/23.
  */
 
-var Animal = function () {
-    function Animal() {
-        _classCallCheck(this, Animal);
+// 07、函数的扩展
+console.log('\n\n');
+console.log('---------------------------------------');
+console.log('------ 07、函数的扩展（开始）-----------');
+console.log('---------------------------------------');
 
-        this.type = 'animal';
+console.log('---1.函数的参数默认值---------');
+function locc(x) {
+    var y = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'world';
+
+    console.log(x, y);
+}
+locc('Hello');
+
+function foo11(_ref) {
+    var x = _ref.x,
+        _ref$y = _ref.y,
+        y = _ref$y === undefined ? '与解构赋值默认值结合使用' : _ref$y;
+
+    console.log(x + y);
+}
+foo11({ x: '张三丰' });
+
+console.log('---2、rest参数---------');
+function addRest() {
+    var sum = 0;
+
+    for (var _len = arguments.length, values = Array(_len), _key = 0; _key < _len; _key++) {
+        values[_key] = arguments[_key];
     }
 
-    _createClass(Animal, [{
-        key: 'says',
-        value: function says(say) {
-            console.log(this.type + 'say' + say);
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
+
+    try {
+        for (var _iterator = values[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+            var i = _step.value;
+
+            sum += i;
         }
-    }]);
-
-    return Animal;
-}();
-
-var Cat = function (_Animal) {
-    _inherits(Cat, _Animal);
-
-    function Cat() {
-        _classCallCheck(this, Cat);
-
-        var _this = _possibleConstructorReturn(this, (Cat.__proto__ || Object.getPrototypeOf(Cat)).call(this));
-
-        _this.type = 'cat';
-        return _this;
+    } catch (err) {
+        _didIteratorError = true;
+        _iteratorError = err;
+    } finally {
+        try {
+            if (!_iteratorNormalCompletion && _iterator.return) {
+                _iterator.return();
+            }
+        } finally {
+            if (_didIteratorError) {
+                throw _iteratorError;
+            }
+        }
     }
 
-    return Cat;
-}(Animal);
-
-var animal = new Animal();
-animal.says('hello');
-
-var cat = new Cat();
-cat.says('helllo');
-
-/**
- * destructuring
- * @type {string}
- */
-var cat1 = 'ken';
-var dog1 = 'lili';
-var zoo1 = { cat1: cat1, dog1: dog1 }; // es5
-var zoo2 = { cat1: cat1, dog1: dog1 }; //es6
-console.log(zoo1); // { cat1: 'ken', dog1: 'lili' }
-console.log(zoo2); // { cat1: 'ken', dog1: 'lili' }
-
-// 反过来，可以这样写
-var dog3 = { type: 'animal', many: 2 };
-var type = dog3.type,
-    many = dog3.many;
-
-console.log(type, many);
-
-/**
- * default rest
- * @param types
- */
-function animals() {
-    for (var _len = arguments.length, types = Array(_len), _key = 0; _key < _len; _key++) {
-        types[_key] = arguments[_key];
-    }
-
-    console.log(types);
+    return sum;
 }
-animals('cat', 'dog', 'fish');
+console.log(addRest(1, 2, 36, 7));
 
-function animal4() {
-    var type = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'cat';
+// console.log('用rest代替arguments');
+// function sortNumbersByArguments() {
+//     return Array.prototype.slice.call(arguments).sort();
+// }
+// const sortNumbersByRest = (...numbers)=>numbers.sort();
+// let arr77 = [1, 2, 4, 6, 9];
+// sortNumbersByArguments(1, 2, 4, 6, 9);
+// console.log(arr77);
+// console.log(sortNumbersByRest(arr77));
+// console.log(arr77);
 
-    console.log(type);
-}
-animal4();
+
+console.log('---3、箭头函数---------');
+var full = function full(_ref2) {
+    var first = _ref2.first,
+        last = _ref2.last;
+    return first + '|' + last;
+};
+console.log(full({ first: '箭头函数', last: '可以与变量解构结合使用' }));
+
+console.log([1, 2, 3].map(function (x) {
+    return x * x;
+}));
 
 console.log('---------------------------------------');
-console.log('------ 30分钟掌握ES6/ES2015核心内容（结束）-----------');
+console.log('------ 07、函数的扩展（结束）-----------');
+console.log('---------------------------------------');
+
+/***/ }),
+/* 332 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+/**
+ * Created by sf on 2017/12/23.
+ */
+
+// 08、数组的扩展
+console.log('\n\n');
+console.log('---------------------------------------');
+console.log('------ 08、数组的扩展（开始）-----------');
+console.log('---------------------------------------');
+
+console.log('---1.扩展运算符---------');
+console.log('扩展运算符（spread）是三个点（...）。它好比 rest 参数的逆运算，将一个数组转为用逗号分隔的参数序列。');
+function arrayPushSpread(arr) {
+    for (var _len = arguments.length, items = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+        items[_key - 1] = arguments[_key];
+    }
+
+    arr.push.apply(arr, items);
+}
+var array = [];
+arrayPushSpread.apply(undefined, [array].concat([44, 4, 55, 66]));
+console.log(array);
+
+function f(x, y, z) {
+    console.log(x + y + z);
+}
+var args = [1, 2, 3];
+f.apply(null, args); // ES5的写法
+var args1 = [3, 4, 5];
+f.apply(undefined, args1); // ES6的写法
+
+
+console.log('---2.Array.from()---------');
+console.log('Array.from方法用于将两类对象转为真正的数组：类似数组的对象（array-like object）和可遍历（iterable）的对象');
+
+console.log('---3.Array.of()---------');
+console.log('Array.of方法用于将一组值，转换为数组。');
+console.log(Array.of(3, 11, 22));
+
+console.log('---4.copeWithin()---------');
+console.log('在数组内，将指定位置的成员复制到其他位置');
+console.log([1, 2, 3, 4, 5].copyWithin(2, 3)); //[1, 2, 4, 5, 5]
+console.log([1, 2, 3, 4, 5].copyWithin(2)); //[1, 2, 1, 2, 3]
+
+console.log('---5、find()和findIndex() ---------');
+console.log('find方法，用于找出第一个符合条件的数组成员。');
+console.log('参数是一个回调函数，所有数组成员依次执行该回调函数，直到找到第一个返回值为ture的成员');
+console.log([1, 2, 3, 4, 5].find(function (n) {
+    return n > 3;
+})); //4
+console.log([1, 2, 3, 4, 5].find(function (n) {
+    return n < 0;
+})); //undefined
+console.log([1, 2, 3, 4, 5].findIndex(function (n) {
+    return n > 3;
+})); //3
+console.log([1, 2, 3, 4, 5].findIndex(function (n) {
+    return n < 0;
+})); //-1
+
+console.log('---6、fill() ---------');
+// arg1:填充字符串；arg2:起始位置；arg3:结束位置
+console.log(['a', 'b', 'c'].fill(5)); //[5, 5, 5]
+console.log(['a', 'b', 'c'].fill(7, 1, 2)); //["a", 7, "c"]
+
+console.log('---7、keys() values() entries() ---------');
+console.log('键名的遍历，键值的遍历，键值对的遍历');
+var _iteratorNormalCompletion = true;
+var _didIteratorError = false;
+var _iteratorError = undefined;
+
+try {
+    for (var _iterator = ['a', 'b'].keys()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var index = _step.value;
+
+        console.log(index);
+    }
+} catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+} finally {
+    try {
+        if (!_iteratorNormalCompletion && _iterator.return) {
+            _iterator.return();
+        }
+    } finally {
+        if (_didIteratorError) {
+            throw _iteratorError;
+        }
+    }
+}
+
+var _iteratorNormalCompletion2 = true;
+var _didIteratorError2 = false;
+var _iteratorError2 = undefined;
+
+try {
+    for (var _iterator2 = ['a', 'b'].values()[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+        var val = _step2.value;
+
+        console.log(val);
+    }
+} catch (err) {
+    _didIteratorError2 = true;
+    _iteratorError2 = err;
+} finally {
+    try {
+        if (!_iteratorNormalCompletion2 && _iterator2.return) {
+            _iterator2.return();
+        }
+    } finally {
+        if (_didIteratorError2) {
+            throw _iteratorError2;
+        }
+    }
+}
+
+var _iteratorNormalCompletion3 = true;
+var _didIteratorError3 = false;
+var _iteratorError3 = undefined;
+
+try {
+    for (var _iterator3 = ['a', 'b'].entries()[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+        var _step3$value = _slicedToArray(_step3.value, 2),
+            _index = _step3$value[0],
+            _val = _step3$value[1];
+
+        console.log(_index, _val);
+    }
+} catch (err) {
+    _didIteratorError3 = true;
+    _iteratorError3 = err;
+} finally {
+    try {
+        if (!_iteratorNormalCompletion3 && _iterator3.return) {
+            _iterator3.return();
+        }
+    } finally {
+        if (_didIteratorError3) {
+            throw _iteratorError3;
+        }
+    }
+}
+
+console.log('---8、includes() ---------');
+console.log('返回一个布尔值，表示某个数组是否包含给定的值');
+console.log([1, 2, 3].includes(2));
+console.log([1, 4, 2, 3].includes(7));
+
+console.log('---------------------------------------');
+console.log('------ 08、数组的扩展（结束）-----------');
 console.log('---------------------------------------');
 
 /***/ })

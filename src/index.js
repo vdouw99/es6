@@ -9,10 +9,10 @@ import './segmentfault/index.js';
 
 
 // 03、变量的解析赋值
-import './ruanyifeng/03.js';
+import './ruanyifeng/03_var.js';
 
-// 04、变量的解构拓展
-import './ruanyifeng/04.js';
+// 04、字符串的扩展
+import './ruanyifeng/04_str.js';
 
 // 07、函数的扩展
 import './ruanyifeng/07_function.js';
