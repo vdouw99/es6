@@ -23,4 +23,7 @@ import './ruanyifeng/08_array.js';
 // 09、对象的扩展
 import './ruanyifeng/09_object.js';
 
+// 10、Symbol
+import './ruanyifeng/10_Symbol.js';
+
 
