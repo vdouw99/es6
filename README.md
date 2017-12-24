@@ -11,6 +11,7 @@ http://es6.ruanyifeng.com/
 08、数组的扩展
 09、对象的扩展
 10、Symbol
+11、Set和Map数据结构
 
 
 30分钟掌握ES6/ES2015核心内容
