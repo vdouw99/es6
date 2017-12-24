@@ -29,4 +29,7 @@ import './ruanyifeng/10_Symbol.js';
 // 11、Set和Map数据结构
 import './ruanyifeng/11_set_map.js';
 
+// 14、Promise对象
+import './ruanyifeng/14_Promise.js';
+
 
