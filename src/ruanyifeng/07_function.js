@@ -7,7 +7,8 @@ console.log('---------------------------------------');
 console.log('------ 07、函数的扩展（开始）-----------');
 console.log('---------------------------------------');
 
-// 1.函数的参数默认值
+
+console.log('---1.函数的参数默认值---------');
 function locc(x, y = 'world') {
     console.log(x, y);
 }
@@ -18,7 +19,8 @@ function foo11({x, y='与解构赋值默认值结合使用'}) {
 }
 foo11({x: '张三丰'});
 
-// 2、rest参数
+
+console.log('---2、rest参数---------');
 function addRest(...values) {
     let sum = 0;
     for (let i of values) {
@@ -39,7 +41,8 @@ console.log(addRest(1, 2, 36, 7));
 // console.log(sortNumbersByRest(arr77));
 // console.log(arr77);
 
-// 3、箭头函数
+
+console.log('---3、箭头函数---------');
 const full = ({first, last})=>first + '|' + last;
 console.log(full({first: '箭头函数', last: '可以与变量解构结合使用'}));
 
