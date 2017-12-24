@@ -20,5 +20,7 @@ import './ruanyifeng/07_function.js';
 // 08、数组的扩展
 import './ruanyifeng/08_array.js';
 
+// 09、对象的扩展
+import './ruanyifeng/09_object.js';
 
 
