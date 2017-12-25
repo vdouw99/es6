@@ -32,4 +32,7 @@ import './ruanyifeng/11_set_map.js';
 // 14、Promise对象
 import './ruanyifeng/14_Promise.js';
 
+// 19、Class的基本语法
+import './ruanyifeng/19_Class.js';
+
 

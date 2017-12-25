@@ -13,6 +13,7 @@ http://es6.ruanyifeng.com/
 10、Symbol
 11、Set和Map数据结构
 14、Promise对象
+19、Class的基本语法
 
 
 30分钟掌握ES6/ES2015核心内容
