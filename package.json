@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.server.js --port 1999 --hot --inline --progress --colors --history-api-fallback",
+    "start": "webpack-dev-server --config webpack.server.js --port 5136 --hot --inline --progress --colors --history-api-fallback",
     "mock": "node ./mock/server.js",
     "build": "webpack --config webpack.config.js --progress --colors --display-modules --display-reasons"
   },
