@@ -1,4 +1,6 @@
-node_modules/
+ruanyifeng/node_modules
 .idea/
 ruanyifeng/dist
 ruanyifeng/dist/
+caipiao/node_modules
+caipiao/dist

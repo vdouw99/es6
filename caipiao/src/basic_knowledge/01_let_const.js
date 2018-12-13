@@ -2,6 +2,8 @@
  * Created by zhangsanfeng on 2018/12/13.
  */
 
+console.log('--------------------------01、let const------------------------');
+
 function test() {
     // for (let i = 0; i < 5; i++) {  //Uncaught ReferenceError: i is not defined
     for (var i = 0; i < 5; i++) {
