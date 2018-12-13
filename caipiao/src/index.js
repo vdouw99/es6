@@ -11,7 +11,7 @@ import './basic_knowledge/08.js';
 import './basic_knowledge/09.js';
 import './basic_knowledge/10.js';
 import './basic_knowledge/11.js';
-import './basic_knowledge/12.js';
+// import './basic_knowledge/12.js';
 import './basic_knowledge/13.js';
 import './basic_knowledge/14.js';
 import './basic_knowledge/15.js';
