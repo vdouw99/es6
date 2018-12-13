@@ -11,7 +11,7 @@ var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 module.exports = {
     entry: [
         'webpack/hot/dev-server.js',
-        'webpack-dev-server/client?http://localhost:5136',
+        'webpack-dev-server/client?http://localhost:5204',
         './src/index.js'
     ],
     output: {
@@ -77,7 +77,7 @@ module.exports = {
 
         // 自动打开浏览器
         new OpenBrowserPlugin({
-            url: 'http://localhost:5136'
+            url: 'http://localhost:5204'
         })
     ],
 

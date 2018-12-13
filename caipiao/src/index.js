@@ -1,3 +1,3 @@
 import 'babel-polyfill';
 
-console.log('src/index.js');
+import './basic_knowledge/01_let_const.js';
