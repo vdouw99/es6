@@ -5,3 +5,4 @@ import './basic_knowledge/02.js';
 import './basic_knowledge/03.js';
 import './basic_knowledge/04.js';
 import './basic_knowledge/05.js';
+import './basic_knowledge/06.js';
