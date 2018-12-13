@@ -57,15 +57,14 @@ console.log('--------------------------02、解构赋值------------------------
 }
 
 {
-    function f() {
-        return [1, 2, 3, 4, 5, 6, 7];
-    }
-
     let a, b, c;
     [a, ...b] = f();
     console.log(b);
     [a, , ...c] = f();
     console.log(c);
+    function f() {
+        return [1, 2, 3, 4, 5, 6, 7];
+    }
 }
 
 {
@@ -85,9 +84,7 @@ console.log('--------------------------02、解构赋值------------------------
     console.log('解构赋值在嵌套的对象和数组中的应用，比较难理解');
     let metaData = {
         title: 'abc1111111',
-        test: [
-            {title: 'test111', desc: 'description'}
-        ]
+        test: [{title: 'test111', desc: 'description'}]
     };
     let {title:esTitle, test:[{title:cnTitle, desc:cnDesc}]} = metaData;
     console.log(esTitle, cnTitle, cnDesc);
