@@ -88,7 +88,7 @@ console.log('异步编程的解决方案');
         yield new Promise(function (resolve, reject) {
             setTimeout(function () {
                 resolve({code: 0});  //调用接口，0改成1可以看效果
-            }, 200);
+            }, 20);
         })
     };
     let pull = function () {
@@ -99,7 +99,7 @@ console.log('异步编程的解决方案');
                 setTimeout(function () {
                     console.log('长轮询wait');
                     pull();
-                }, 1000);
+                }, 20);
             } else {
                 console.log('长轮询');
                 console.log(d);

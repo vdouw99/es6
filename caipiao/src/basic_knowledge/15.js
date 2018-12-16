@@ -12,7 +12,7 @@ console.log('异步编程的解决方案');
         console.log('11111');
         setTimeout(function () {
             callback && callback();
-        }, 1000);
+        }, 10);
     };
     ajax(function () {
         console.log(22222);
@@ -25,7 +25,7 @@ console.log('异步编程的解决方案');
         return new Promise(function (resolve, reject) {
             setTimeout(function () {
                 resolve();
-            }, 1000);
+            }, 10);
         });
     };
     ajax().then(()=> {
@@ -39,14 +39,14 @@ console.log('异步编程的解决方案');
         return new Promise(function (resolve, reject) {
             setTimeout(function () {
                 resolve();
-            }, 1000);
+            }, 10);
         });
     };
     ajax().then(()=> {
         return new Promise((resolve, reject)=> {
             setTimeout(()=> {
                 resolve();
-            }, 1000);
+            }, 10);
         });
     }).then(()=> {
         console.log('666666666');

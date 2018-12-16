@@ -19,3 +19,12 @@ import './basic_knowledge/16.js';
 import './basic_knowledge/17.js';
 import './basic_knowledge/18.js';
 import './basic_knowledge/19.js';
+
+setTimeout(()=> {
+    console.log('-------------------------------------------------');
+    console.log('------------------华丽丽的分割线--------------------');
+    console.log('-------------------------------------------------');
+}, 50);
+
+import lottery from './lottery.js';
+
