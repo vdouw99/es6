@@ -28,3 +28,8 @@ setTimeout(()=> {
 
 import lottery from './lottery.js';
 
+// import $ from 'jquery';
+// console.log('-----');
+// console.log($());
+// console.log('-----');
+

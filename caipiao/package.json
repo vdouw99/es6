@@ -41,6 +41,7 @@
   "dependencies": {
     "babel-plugin-transform-decorators-legacy": "^1.3.5",
     "core-decorators": "^0.20.0",
-    "es6-promise": "^4.1.1"
+    "es6-promise": "^4.1.1",
+    "jquery": "^3.3.1"
   }
 }
