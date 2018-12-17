@@ -15,7 +15,7 @@ console.log('异步编程的解决方案');
         }, 10);
     };
     ajax(function () {
-        console.log(22222);
+        // console.log(22222);
     });
 }
 
@@ -29,7 +29,7 @@ console.log('异步编程的解决方案');
         });
     };
     ajax().then(()=> {
-        console.log('44444');
+        // console.log('44444');
     })
 }
 
@@ -49,7 +49,7 @@ console.log('异步编程的解决方案');
             }, 10);
         });
     }).then(()=> {
-        console.log('666666666');
+        // console.log('666666666');
     })
 }
 
@@ -65,7 +65,7 @@ console.log('异步编程的解决方案');
         });
     };
     ajax(12).then(()=> {  //小于5就报错
-        console.log(88888);
+        // console.log(88888);
     }).catch((err) => {
         console.log(err);
     });

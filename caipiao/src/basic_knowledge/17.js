@@ -101,8 +101,8 @@ console.log('异步编程的解决方案');
                     pull();
                 }, 20);
             } else {
-                console.log('长轮询');
-                console.log(d);
+                // console.log('长轮询');
+                // console.log(d);
             }
         })
     };

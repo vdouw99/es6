@@ -20,16 +20,14 @@ import './basic_knowledge/17.js';
 import './basic_knowledge/18.js';
 import './basic_knowledge/19.js';
 
-setTimeout(()=> {
-    console.log('-------------------------------------------------');
-    console.log('------------------华丽丽的分割线--------------------');
-    console.log('-------------------------------------------------');
-}, 50);
+// setTimeout(()=> {
+    console.log('----------------------------------------------------------------');
+    console.log('--------------------------华丽丽的分割线--------------------------');
+    console.log('----------------------------------------------------------------');
+// }, 50);
+
+console.log(1231111111111111111);
 
 import lottery from './lottery.js';
 
-// import $ from 'jquery';
-// console.log('-----');
-// console.log($());
-// console.log('-----');
 
