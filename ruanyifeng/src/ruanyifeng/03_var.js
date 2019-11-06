@@ -20,7 +20,7 @@ console.log(a + "|" + b + "|" + c + "|" + d + "|" + e + "|" + f1 + "|" + g + "|"
 
 // 函数参数的解构赋值
 function add([x,y]) {
-    return x + y;
+  return x + y;
 }
 console.log(add([55, 66]));
 
@@ -42,7 +42,7 @@ console.log('y3:' + y3);
 console.log('---2、从函数返回多个值---------');
 //从函数返回多个值(返回数组)
 function exampleArray() {
-    return [1, 2, 3];
+  return [1, 2, 3];
 }
 let [a6, b6, c6] = exampleArray();
 console.log(a6 + "|" + b6 + "|" + c6);
@@ -51,10 +51,10 @@ console.log('有了解构赋值，取出这些值就非常方便。');
 
 //从函数返回多个值(返回对象)
 function exampleFun() {
-    return {
-        foo: 1,
-        bar: 2
-    };
+  return {
+    foo: 1,
+    bar: 2
+  };
 }
 let {foo, bar} = exampleFun();
 console.log(foo + "|" + bar);
@@ -62,7 +62,7 @@ console.log(foo + "|" + bar);
 console.log('---3、函数的参数定义---------');
 console.log('解构赋值可以方便地将一组参数与变量名对应起来。');
 function ff([x,y,z]) {
-    return x + y * z;
+  return x + y * z;
 }
 console.log(ff([7, 6, 2]));
 
@@ -83,7 +83,7 @@ jQuery.ajax = function (url, {
     global = true
     // ... more config
 }) {
-    // ... do stuff
+  // ... do stuff
 }
 
 console.log('---6、遍历Map结构---------');
