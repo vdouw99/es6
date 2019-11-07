@@ -12,14 +12,14 @@ console.log('---------------------------------------');
 console.log('---1.扩展运算符---------');
 console.log('扩展运算符（spread）是三个点（...）。它好比 rest 参数的逆运算，将一个数组转为用逗号分隔的参数序列。');
 function arrayPushSpread(arr, ...items) {
-    arr.push(...items);
+  arr.push(...items);
 }
 var array = [];
 arrayPushSpread(array, ...[44, 4, 55, 66]);
 console.log(array);
 
 function f(x, y, z) {
-    console.log(x + y + z);
+  console.log(x + y + z);
 }
 var args = [1, 2, 3];
 f.apply(null, args);  // ES5的写法
@@ -55,13 +55,13 @@ console.log(['a', 'b', 'c'].fill(7, 1, 2));  //["a", 7, "c"]
 console.log('---7、keys() values() entries() ---------');
 console.log('键名的遍历，键值的遍历，键值对的遍历');
 for (let index of ['a', 'b'].keys()) {
-    console.log(index);
+  console.log(index);
 }
 for (let val of ['a', 'b'].values()) {
-    console.log(val);
+  console.log(val);
 }
 for (let [index,val] of ['a', 'b'].entries()) {
-    console.log(index, val);
+  console.log(index, val);
 }
 
 console.log('---8、includes() ---------');

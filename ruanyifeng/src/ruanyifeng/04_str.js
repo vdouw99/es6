@@ -12,8 +12,8 @@ console.log('---------------------------------------');
 console.log('提出字符串实例的at方法，可以识别 Unicode 编号大于0xFFFF的字符，返回正确的字符。');
 const word = '张𠮷可耕地三丰';
 for (let i = 0; i < word.length; i++) {
-    console.log(i + '--at--' + word.at(i));
-    console.log(i + '--charAt--' + word.charAt(i));
+  console.log(i + '--at--' + word.at(i));
+  console.log(i + '--charAt--' + word.charAt(i));
 }
 
 // 7.includes(), startsWith(), endsWith()

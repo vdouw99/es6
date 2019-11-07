@@ -12,15 +12,15 @@ console.log('---------------------------------------');
 console.log('--- 1、属性的简洁表示法 ---------');
 console.log('ES6允许直接写入变量和函数，作为对象的属性和方法');
 function f(x, y) {
-    return {x, y};
+  return {x, y};
 }
 console.log(f('x', 'y'));   // {x: "x", y: "y"}
 
 console.log('--- 2、属性名表达式 ---------');
 let lastWord = 'last word';
 const a = {
-    'first': 'hello',
-    [lastWord]: 'world'
+  'first': 'hello',
+  [lastWord]: 'world'
 };
 console.log(a);  // {first: "hello", last word: "world"}
 
@@ -42,22 +42,22 @@ console.log(t2);  // {b: 2}
 console.log(t3);  // {c: 3}
 console.log('作用1：为对象添加属性');
 class Point {
-    constructor(x, y) {
-        Object.assign(this, {x, y});
-    }
+  constructor(x, y) {
+    Object.assign(this, {x, y});
+  }
 }
 console.log('作用2：为对象添加方法');
 var someClass = {};
 Object.assign(someClass, {
-    someMethod(arg1, arg2){
-        console.log(arg1 + arg2);
-    }
+  someMethod(arg1, arg2){
+    console.log(arg1 + arg2);
+  }
 });
 console.log(someClass);
 someClass.someMethod(22, 33);
 console.log('作用3：克隆对象');
 function clone1(origin) {
-    return Object.assign({}, origin);
+  return Object.assign({}, origin);
 }
 var newObj = clone1(someClass);
 console.log('对象的浅克隆');

@@ -18,7 +18,7 @@ console.log('--- 2、作为属性名的Symbol ---------');
 let mySymbol = Symbol();
 let mySymbol2 = Symbol();
 let a = {
-    [mySymbol]: 'Hello'
+  [mySymbol]: 'Hello'
 };
 a[mySymbol2] = 'world';
 console.log(a);

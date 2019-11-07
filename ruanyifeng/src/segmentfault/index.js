@@ -13,20 +13,20 @@ console.log('---------------------------------------');
  * class, extends, super
  */
 class Animal {
-    constructor() {
-        this.type = 'animal';
-    }
+  constructor() {
+    this.type = 'animal';
+  }
 
-    says(say) {
-        console.log(this.type + 'say' + say);
-    }
+  says(say) {
+    console.log(this.type + 'say' + say);
+  }
 }
 
 class Cat extends Animal {
-    constructor() {
-        super();
-        this.type = 'cat';
-    }
+  constructor() {
+    super();
+    this.type = 'cat';
+  }
 }
 
 let animal = new Animal();
@@ -58,12 +58,12 @@ console.log(type, many);
  * @param types
  */
 function animals(...types) {
-    console.log(types);
+  console.log(types);
 }
 animals('cat', 'dog', 'fish');
 
 function animal4(type = 'cat') {
-    console.log(type);
+  console.log(type);
 }
 animal4();
 

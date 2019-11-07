@@ -11,23 +11,23 @@ console.log('---------------------------------------');
 
 console.log('---1.函数的参数默认值---------');
 function locc(x, y = 'world') {
-    console.log(x, y);
+  console.log(x, y);
 }
 locc('Hello');
 
 function foo11({x, y='与解构赋值默认值结合使用'}) {
-    console.log(x + y);
+  console.log(x + y);
 }
 foo11({x: '张三丰'});
 
 
 console.log('---2、rest参数---------');
 function addRest(...values) {
-    let sum = 0;
-    for (let i of values) {
-        sum += i;
-    }
-    return sum;
+  let sum = 0;
+  for (let i of values) {
+    sum += i;
+  }
+  return sum;
 }
 console.log(addRest(1, 2, 36, 7));
 
